@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Anastasia Lunina</title>
+      <link rel="icon" type="image/svg" href="img/logo.svg">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+
+      <!-- Dark mode switch -->
+      <div class="theme-switch-wrapper" data-aos="fade-right" data-aos-delay="2000">
+         <span id="toggle-icon">
+         <span class="toggle-text" data-key="theme-light">Light Mode</span>
+         <i class="fas fa-sun"></i>
+         </span>
+         <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+         </label>
+      </div>
+      <!-- Menu Overlay -->
+      <div class="overlay overlay-slide-left" id="overlay">
+         <!-- Navigation -->
+         <nav id="nav">
+            <ul>
+               <li id="nav-1"><a href="#home" data-key="nav-home">Home</a></li>
+               <li id="nav-2"><a href="#about" data-key="nav-about">About</a></li>
+               <li id="nav-3"><a href="#learning" data-key="nav-learning">Learning Resume Blog</a></li>
+               <li id="nav-4"><a href="#projects" data-key="nav-projects">Projects</a></li>
+               <li id="nav-5"><a href="#contact" data-key="nav-contact">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+      <!-- Menu Bars -->
+      <div class="menu-bars" id="menu-bars" data-aos="fade-left" data-aos-delay="5000">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+      </div>
+      <!-- Home Section -->
+      <section id="home">
+         <div id="aaa" class="title-group">
+            <h1 data-aos="fade-down" data-aos-delay="200" data-key="heading-name">I am Anastasia</h1>
+            <h2 data-aos="fade-down" data-aos-delay="800" data-key="heading-title">A Software Engineer</h2>
+            <a href="https://github.com/AnastasiaLunina" target="_blank" class="link-github"><img src="img/octocat.svg" alt="octocat" class="octocat"  data-aos="fade-down" data-aos-delay="1500"></img></a>
+         </div>
+      </section>
+      <!-- About Section -->
+      <section id="about">
+         <hr class="about hr-about" width="500px" data-="About">
+         <!-- <h2>About</h2> -->
+         <div class="par-container" data-aos="fade-in" data-aos-delay="100">
+            <p class="par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum dolores obcaecati quas unde error voluptatum omnis nihil? Iusto dolore asperiores ipsam excepturi obcaecati, unde officiis suscipit perspiciatis, quae cupiditate sunt?
+               Quam eos, voluptatem laborum accusamus soluta inventore quas voluptate beatae sit deserunt excepturi quidem asperiores enim, repellendus repudiandae libero esse adipisci, aspernatur impedit laboriosam ex? Ullam ea error porro modi!
+         </div>
+         <!-- Skills -->
+         <div class="skills-stack-container">
+            <hr class="skills" width="500px" data-="Skills">
+            <!-- <h2>Skills</h2> -->
+            <div class="sub-skills-container">
+               <attr class="tooltip" title="Python"><img src="/stack/python-icon.svg" alt="skills-logo" class="skills-img" data-aos="fade-in" data-aos-delay="200"></attr>
+               <attr class="tooltip" title="Django"><img src="/stack/django.svg" alt="skills-logo" class="skills-img" data-aos="fade-in" data-aos-delay="300"></attr>
+               <attr class="tooltip" title="JavaScript"><img src="/stack/JS.png" alt="skills-logo" class="skills-img" data-aos="fade-in" data-aos-delay="400"></attr>
+               <attr class="tooltip" title="React"><img src="/stack/reactjs-icon.svg" alt="skills-logo" class="skills-img" data-aos="fade-in" data-aos-delay="500"></attr>
+               <attr class="tooltip" title="Bootstrap-5"><img src="/stack/Bootstrap.svg" alt="skills-logo" class="skills-img" data-aos="fade-in" data-aos-delay="600"></attr>
+               <attr class="tooltip" title="CSS-3"><img src="/stack/css.svg" alt="skills-logo" class="skills-img" data-aos="fade-in" data-aos-delay="700"></attr>
+            </div>
+            <div class="sub-skills-container" data-aos="fade-in" data-aos-delay="600">
+               <attr class="tooltip" title="HTML-5"><img src="/stack/w3_html5-icon.svg" alt="skills-logo" class="skills-img"></attr>
+               <attr class="tooltip" title="Postgresql"><img src="/stack/postgresql.svg" alt="skills-logo" class="skills-img"></attr>
+               <attr class="tooltip" title="Figma"><img src="/stack/Figma.svg" alt="skills-logo" class="skills-img"></attr>
+               <attr class="tooltip" title="Git/Github"><img src="/stack/github-tile.svg" alt="skills-logo" class="skills-img"></attr>
+               <attr class="tooltip" title="Gsap"><img src="/stack/gsap-greensock.svg" alt="skills-logo" class="skills-img"></attr>
+               <attr class="tooltip large" title="Jira/Confluence"><img src="/stack/Jira.svg" alt="skills-logo" class="skills-img"></attr>
+            </div>
+         </div>
+      </section>
+      <!-- Learning -->
+      <section id="learning">
+         <div class="about-container">
+            <div class="image-container" data-aos="fade-in" data-aos-delay="500">
+               <a href="learning.html" target="_blank" class="additional_links">
+                  <h2>Learning</h2>
+               </a>
+               <img src="img/undraw_proud_coder_light.svg" alt="Proud Coder" id="image1">
+            </div>
+            <div class="image-container" data-aos="fade-in" data-aos-delay="700">
+               <a href="resume.html" target="_blank" class="additional_links">
+                  <h2>Resume</h2>
+               </a>
+               <img src="img/undraw_feeling_proud_light.svg" alt="Proud Coder" id="image2">
+            </div>
+            <div class="image-container" data-aos="fade-in" data-aos-delay="900">
+               <a href="https://medium.com/@lunina.anastasiya" target="_blank" class="additional_links">
+                  <h2>Blog</h2>
+               </a>
+               <img src="img/undraw_conceptual_idea_light.svg" alt="Idea" id="image3">
+            </div>
+         </div>
+      </section>
+      <!-- Projects Section -->
+      <div id="projects">
+         <hr class="projects" width="500px" data-="Projects">
+         <h2 class="projects-heading">Web Applications</h2>
+         <div class="flip-cards-container">
+            <div class="flip-card" data-aos="fade-right" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/9.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Weather API</p>
+                     <br>
+                     <p>HTML5, CSS3, JS, API</p>
+                     <br>
+                     <p class="flip-card-par">Fetches information from Openweathermap API. Depending on the weather background video changes as well as the message. Supports Farenheit and Celsius. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://js-api-weather-forecast.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/JS%20Weather%20API" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-card" data-aos="fade-left" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/10.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Yoga Workout App</p>
+                     <br>
+                     <p>HTML5, CSS3, JS, AOS and GSAP Animations.</p>
+                     <br>
+                     <p class="flip-card-par">Choose from 5 yoga postures, set up the timer, video appears on button click, after time runs out, video dissapears. Button is unabled while video is on. User can take a break and choose from three 5 min relaxation sounds. Icon redirects user to the main website. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://js-yoga-workout.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/JS%20Yoga%20timer" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="flip-cards-container">
+            <div class="flip-card" data-aos="fade-right" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/4.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Quiz Capitals</p>
+                     <br>
+                     <p>HTML5, CSS3, JS</p>
+                     <br>
+                     <p class="flip-card-par">User can choose the answers, notification pops up if the field is empty, wrong answers highlighted with red, correct ones with green. Total score appears in the end. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://js-quiz-world-capitals.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/JS%20Quiz_capitals" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-card" data-aos="fade-left" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/2.png">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Slides Photographer</p>
+                     <br>
+                     <p>HTML5, CSS3, JS, AOS Animations</p>
+                     <br>
+                     <p class="flip-card-par">Landing page for a photographer. Featured pictures slideshow and slides in array. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://js-slides-arrays-photo.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/JS%20Slides%20photographer" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="flip-cards-container">
+            <div class="flip-card" data-aos="fade-right" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/1.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Recipe Book</p>
+                     <br>
+                     <p>HTML5, CSS3, JS, AOS Animations</p>
+                     <br>
+                     <p class="flip-card-par">User is able to implement a search by typing a first letter of recipe name. After pressing the button full recipe appears. Cooking timer included into this cookbook. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://js-cook-book.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/JS%20Recipie%20book" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-card" data-aos="fade-left" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/5.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Concert Countdown Timer</p>
+                     <br>
+                     <p>HTML5, CSS3, JS</p>
+                     <br>
+                     <p class="flip-card-par">Countdown timer counting the time till the concert, user is able to choose the ticket, add add-ons and find out total price. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://js-concert-countdown-calculator.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/JS%20Concert_countdown_calculator" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="flip-cards-container">
+            <div class="flip-card" data-aos="fade-right" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/3.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Quote Generator</p>
+                     <br>
+                     <p>HTML5, CSS3, JS</p>
+                     <br>
+                     <p class="flip-card-par">Fetches the quotes from https://type.fit/api/quotes, user is able to post favorite quote to Twitter. I am planning to implement adding favorite quotes and possibility to add quotes to Facebook. Mobile responsive. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://js-quotes-generator-api.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/JS%20Quote%20generator" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-card" data-aos="fade-left" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Drum</p>
+                     <br>
+                     <p>HTML5, CSS3, JS</p>
+                     <br>
+                     <p class="flip-card-par">Fun game for everyone who wants to try yourself as a drummer. User is able to press on the picture to hear the sound or press corresponding key on the keyboard. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="" target="_blank">Live</a>
+                     <a class="flip-card-link" href="" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <h2 class="projects-heading">Websites</h2>
+         <div class="flip-cards-container">
+            <div class="flip-card" data-aos="fade-right" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/6.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">WeWood Woodworking</p>
+                     <br>
+                     <p>Bootstrap5</p>
+                     <br>
+                     <p class="flip-card-par">Landing page for a woodworking company coded with Bootstrap5. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://bootstrap-woodworking.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/Bootstrap%20Woodwork" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-card" data-aos="fade-left" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/7.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Namaste Yoga Studio</p>
+                     <br>
+                     <p>HTML5, CSS3</p>
+                     <br>
+                     <p class="flip-card-par">Landing page for a yoga studio coded with HTML5 and CSS3 only. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://html-css-namaste-yoga.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/HTML_CSS%20Yoga" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="flip-cards-container">
+            <div class="flip-card" data-aos="fade-right" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="png/8.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Photographer website</p>
+                     <br>
+                     <p>Bootstrap5</p>
+                     <br>
+                     <p class="flip-card-par">Landing page for a Photographer coded with Bootstrap5. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://bootstrap-photographer.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/Portfolio/tree/main/Bootstrap%20Photo" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-card" data-aos="fade-left" data-aos-delay="500">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading">Something else</p>
+                     <br>
+                     <p>HTML5, CSS3</p>
+                     <br>
+                     <p class="flip-card-par">Landing page for a yoga studio coded with HTML5 and CSS3 only. Mobile responsive.</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="" target="_blank">Live</a>
+                     <a class="flip-card-link" href="" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- <h2>Projects</h2> -->
+         <!-- <div class="buttons">
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+            <button class="primary" disabled>Disabled</button>
+            <button class="outline">Outline</button>
+            <button class="secondary outline">Alt Outline</button>
+            <button class="outline">Disabled</button>
+            </div> -->
+         <!-- <div class="text-box" id="text-box">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo nam rem odio minus voluptas repudiandae aspernatur error nihil ipsam cumque, qui laboriosam hic alias unde accusantium consequatur fugit incidunt sequi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis tenetur asperiores, fugit a quas repudiandae nulla rerum, consectetur inventore officiis vitae, repellat corrupti exercitationem aut accusantium alias error quis?</p>
+            </div> -->
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact">
+         <hr class="contact" width="500px" style="content:'Contact'">
+         <!-- <h2>Contact</h2> -->
+         <div class="contact-icons">
+            <a href="https://github.com/AnastasiaLunina" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anastasia-lunina/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fa-solid fa-envelope fab"></i></a>
+            <a href="#home"><i class="fa-solid fa-house fab"></i></a>
+         </div>
+      </div>
+
+       
+
+      <footer>
+         <p>Anastasia Lunina 2022 &copy</p>
+      </footer>
+
+      <!-- Loader -->
+      <div class="loader" id="loader">
+         <img src="img/loader.svg" alt="Loading">
+      </div>
+                       
+
+      <!-- AOS.js -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay: 200,
+    duration: 1500,
+    once: false,
+    mirror: false,    
+  });
+</script>
+      <!-- Script -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <script src="script_bar_menu.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>

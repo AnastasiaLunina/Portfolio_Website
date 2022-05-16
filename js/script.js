@@ -11,7 +11,7 @@ let readMore = document.querySelectorAll('.readMoreBtn');
 // const textBox = document.getElementById('text-box');
 
 // Read More Read Less Button
-let noOfCharac = 200;
+let noOfCharac = 170;
 let contents = document.querySelectorAll(".flip-card-par")
 
 contents.forEach(content => {
@@ -26,13 +26,12 @@ contents.forEach(content => {
   }
 });
 
-function readMoreLess(btn){
-  let post = btn.parentElement;
+function readMoreLess(readMore){
+  let post = readMore.parentElement;
   post.querySelector(".dots").classList.toggle("hide");
   post.querySelector(".more").classList.toggle("hide");
-  btn.textContent == "Read More" ? btn.textContent == "Read Less" : btn.textContent = "Read More";
+  readMore.textContent == "Read More" ? readMore.textContent == "Read Less" : readMore.textContent = "Read More";
 }
-
 
 // Loader
 document.onreadystatechange = function() {
@@ -44,17 +43,6 @@ document.onreadystatechange = function() {
     document.querySelector("body").style.visibility = "visible";
   }
 };
-
-// function showLoadingSpinner() {
-//   loader.hidden = false;
-//   background_home.hidden = true;
-// }
-
-// function removeLoadingSpinner() {
-//   background_home.hidden = false;
-//   loader.hidden = true;
-// }
-
 
 //LightMode
 function lightMode() {

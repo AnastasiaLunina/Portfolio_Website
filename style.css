@@ -336,6 +336,19 @@ form {
   align-items: center;
 }
 
+.readMoreBtn {
+  font-family: Comfortaa, sans-serif;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.readMoreBtn:active {
+  transform: scale(0.98);
+  /* box-shadow: 1px 1px 20px 2px rgba(255, 255, 255, 0.7); */
+}
+
 .btn {
   background-color: var(--primary-color);
   font-family: Comfortaa, sans-serif;
@@ -883,6 +896,20 @@ footer {
 
   #learning {
     min-height: 50vh;
+  }
+
+  .flip-card-heading {
+    font-size: .9rem;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+  
+  .flip-card-par {
+    font-size: .5rem;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 

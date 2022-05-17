@@ -11,7 +11,7 @@ let readMore = document.querySelectorAll('.readMoreBtn');
 // const textBox = document.getElementById('text-box');
 
 // Read More Read Less Button
-let noOfCharac = 170;
+let noOfCharac = 130;
 let contents = document.querySelectorAll(".flip-card-par")
 
 contents.forEach(content => {

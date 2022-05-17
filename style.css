@@ -815,10 +815,14 @@ footer {
   }
 
   .image-container {
-    padding: 20px;
+    padding: 10px;
     margin-right: 10px;
     margin-left: 10px;
     width: 95px;
+  }
+
+  .cards {
+    font-size: 1rem;
   }
 
   img {

@@ -818,7 +818,7 @@ footer {
     padding: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    width: 80px;
+    width: 95px;
   }
 
   img {
@@ -875,6 +875,10 @@ footer {
   .menu-bars {
     top: 0.5rem;
     right: 1rem;
+  }
+
+  #learning {
+    min-height: 50vh;
   }
 }
 

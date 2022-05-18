@@ -80,6 +80,43 @@ body {
   transform: translateX(-100vw);
 }
 
+/* Button Language */
+/* #container-language {
+  cursor: pointer;
+  position: fixed;
+  width: 10%;
+} */
+
+.language {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.btn-language {
+  position: relative;
+  z-index: 130;
+  cursor: pointer;
+  margin-top: 25px;
+  border: none;
+  background: transparent;
+  opacity: 0.7;
+  transition: all .5s;
+}
+
+.btn-language:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+#btnRU:focus, #btnENG:focus{
+  transform: scale3d(1.1,1.1,1.1);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
 /* Nav Menu Items */
 nav, 
 nav ul {
@@ -235,11 +272,17 @@ section {
   flex-direction: column;
 }
 
+@font-face {
+  font-family: Sacramento; /* Гарнитура шрифта */
+  src: url(fonts/sacramento.ttf); /* Путь к файлу со шрифтом */
+ }
+
 h1 {
   margin-top: 5px;
   font-family: Sacramento, sans-serif;
   font-size: 9rem;
   margin-bottom: 0;
+
 }
 
 h2 {
@@ -400,7 +443,7 @@ form {
   width: 200px;
 }
 
-img {
+.my-photo {
   height: 300px;
   width: 300px;
 }
@@ -472,6 +515,11 @@ img {
   width: 550px;
   height: 430px;
   padding: 25px;
+}
+
+#image1, #image2, #image3 {
+  height: 300px;
+  width: 300px;
 }
 
 /* Resume */
@@ -911,6 +959,23 @@ footer {
     font-size: .5rem;
     margin-right: 15px;
     margin-left: 15px;
+  }
+
+  .language {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 10vw;
+  }
+  
+  .btn-language {
+    align-items: flex-start;
+    margin-top: 25px;
+  }
+
+  .flag-img {
+    width: 25px;
+    height: 25px;
   }
 }
 

@@ -7,6 +7,9 @@
       <link rel="icon" type="image/svg" href="img/logo.svg">
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Nunito&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
@@ -21,16 +24,23 @@
             <div class="slider round"></div>
          </label>
       </div>
+      <!-- Language Buttons -->
+      <div id="container-language">
+         <div class="language">
+            <button class="btn-language" id="btnRU"><img class="flag-img" src="img/flag/russia.png" alt="RU" width="40px"></button>
+            <button class="btn-language" id="btnENG"><img class="flag-img" src="img/flag/united-states.png" alt="ENG" width="40px"></button>
+         </div>
+      </div>
       <!-- Menu Overlay -->
       <div class="overlay overlay-slide-left" id="overlay">
          <!-- Navigation -->
          <nav id="nav">
             <ul>
-               <li id="nav-1"><a href="#home" data-key="nav-home">Home</a></li>
-               <li id="nav-2"><a href="#about" data-key="nav-about">About</a></li>
-               <li id="nav-3"><a href="#learning" data-key="nav-learning">Learning Resume Blog</a></li>
-               <li id="nav-4"><a href="#projects" data-key="nav-projects">Projects</a></li>
-               <li id="nav-5"><a href="#contact" data-key="nav-contact">Contact</a></li>
+               <li id="nav-1"><a href="#home" class="nav-home">Home</a></li>
+               <li id="nav-2"><a href="#about" class="nav-about">About</a></li>
+               <li id="nav-3"><a href="#learning" class="nav-learning">Learning Resume Blog</a></li>
+               <li id="nav-4"><a href="#projects" class="nav-projects">Projects</a></li>
+               <li id="nav-5"><a href="#contact" class="nav-contact">Contact</a></li>
             </ul>
          </nav>
       </div>
@@ -43,8 +53,8 @@
       <!-- Home Section -->
       <section id="home">
          <div class="title-group">
-            <h1 data-aos="fade-down" data-aos-delay="200" data-key="heading-name">I am Anastasia</h1>
-            <h2 data-aos="fade-down" data-aos-delay="800" data-key="heading-title">A Software Engineer</h2>
+            <h1 data-aos="fade-down" data-aos-delay="200" class="heading-name">I am Anastasia</h1>
+            <h2 data-aos="fade-down" data-aos-delay="800" class="heading-title">A Software Engineer</h2>
             <a href="https://github.com/AnastasiaLunina" target="_blank" class="link-github"><img src="img/octocat.svg" alt="octocat" class="octocat"  data-aos="fade-down" data-aos-delay="1500"></img></a>
          </div>
       </section>
@@ -84,19 +94,19 @@
          <div class="about-container">
             <div class="image-container" data-aos="fade-in" data-aos-delay="200">
                <a href="learning.html" target="_blank" class="additional_links">
-                  <h2 class="cards">Learning</h2>
+                  <h2 class="cards learning">Learning</h2>
                </a>
                <img src="img/undraw_proud_coder_light.svg" alt="Proud Coder" id="image1">
             </div>
             <div class="image-container" data-aos="fade-in" data-aos-delay="400">
                <a href="resume.html" target="_blank" class="additional_links">
-                  <h2 class="cards">Resume</h2>
+                  <h2 class="cards resume">Resume</h2>
                </a>
                <img src="img/undraw_feeling_proud_light.svg" alt="Proud Coder" id="image2">
             </div>
             <div class="image-container" data-aos="fade-in" data-aos-delay="600">
                <a href="https://medium.com/@lunina.anastasiya" target="_blank" class="additional_links">
-                  <h2 class="cards">Blog</h2>
+                  <h2 class="cards blog">Blog</h2>
                </a>
                <img src="img/undraw_conceptual_idea_light.svg" alt="Idea" id="image3">
             </div>
@@ -114,11 +124,11 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Weather API</p>
+                     <p class="flip-card-heading weather">Weather API</p>
                      <br>
                      <p>HTML5, CSS3, JS, API</p>
-                     <p class="flip-card-par">Fetches information from Openweathermap API. Depending on the weather background video changes as well as the message. Supports Farenheit and Celsius. Mobile responsive.</p>
-                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <p class="flip-card-par weather-par">Fetches information from Openweathermap API. Depending on the weather background video changes as well as the message. Supports Farenheit and Celsius. Mobile responsive.</p>
+                     <button class="readMoreBtn weather-btn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
                      <a class="flip-card-link" href="https://js-api-weather-forecast.netlify.app/" target="_blank">Live</a>
@@ -133,10 +143,10 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Yoga Workout App</p>
+                     <p class="flip-card-heading yoga">Yoga Workout App</p>
                      <br>
                      <p>HTML5, CSS3, JS, AOS and GSAP Animations.</p>
-                     <p class="flip-card-par">Choose from 5 postures, set up the timer, video appears on click and dissapears after time is out. Button is disabled while video is on. 3 relaxation sounds buttons. Icon redirects to the main website.</p>
+                     <p class="flip-card-par yoga-par">Choose from 5 postures, set up the timer, video appears on click and dissapears after time is out. Button is disabled while video is on. 3 relaxation sounds buttons. Icon redirects to the main website.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -154,10 +164,10 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Quiz Capitals</p>
+                     <p class="flip-card-heading quiz">Quiz Capitals</p>
                      <br>
                      <p>HTML5, CSS3, JS</p>
-                     <p class="flip-card-par">User can choose the answers, notification pops up if the field is empty, wrong answers highlighted with red, correct ones with green. Total score appears in the end. Mobile responsive.</p>
+                     <p class="flip-card-par quiz-par">User can choose the answers, notification pops up if the field is empty, wrong answers highlighted with red, correct ones with green. Total score appears in the end. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -173,11 +183,11 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Slides Photographer</p>
+                     <p class="flip-card-heading slides">Slides Photographer</p>
                      <br>
                      <p>HTML5, CSS3, JS, AOS Animations</p>
                      <br>
-                     <p class="flip-card-par">Landing page for a photographer. Featured pictures slideshow and slides in array. Mobile responsive.</p>
+                     <p class="flip-card-par slides-par">Landing page for a photographer. Featured pictures slideshow and slides in array. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -195,10 +205,10 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Recipe Book</p>
+                     <p class="flip-card-heading recipe">Recipe Book</p>
                      <br>
                      <p>HTML5, CSS3, JS, AOS Animations</p>
-                     <p class="flip-card-par">User is able to implement a search by typing a first letter of recipe name. After pressing the button full recipe appears. Cooking timer included into this cookbook. Mobile responsive.</p>
+                     <p class="flip-card-par recipe-par">User is able to implement a search by typing a first letter of recipe name. After pressing the button full recipe appears. Cooking timer included into this cookbook. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -214,10 +224,10 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Concert Countdown Timer</p>
+                     <p class="flip-card-heading concert">Concert Countdown Timer</p>
                      <br>
                      <p>HTML5, CSS3, JS</p>
-                     <p class="flip-card-par">Countdown timer counting the time till the concert, user is able to choose the ticket, add add-ons and find out total price. Mobile responsive.</p>
+                     <p class="flip-card-par concert-par">Countdown timer counting the time till the concert, user is able to choose the ticket, add add-ons and find out total price. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -235,10 +245,10 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Quote Generator</p>
+                     <p class="flip-card-heading quote">Quote Generator</p>
                      <br>
                      <p>HTML5, CSS3, JS</p>
-                     <p class="flip-card-par">Fetches the quotes from https://type.fit/api/quotes, user can post favorite quote to Twitter. Mobile responsive.</p>
+                     <p class="flip-card-par quote-par">Fetches the quotes from https://type.fit/api/quotes, user can post favorite quote to Twitter. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -254,10 +264,10 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Drum</p>
+                     <p class="flip-card-heading drum">Drum</p>
                      <br>
                      <p>HTML5, CSS3, JS</p>
-                     <p class="flip-card-par">Fun game for everyone who wants to try yourself as a drummer. User is able to press on the picture to hear the sound or press corresponding key on the keyboard. Mobile responsive.</p>
+                     <p class="flip-card-par drum-par">Fun game for everyone who wants to try yourself as a drummer. User is able to press on the picture to hear the sound or press corresponding key on the keyboard. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -267,7 +277,7 @@
                </div>
             </div>
          </div>
-         <h2 class="projects-heading">Websites</h2>
+         <h2 class="projects-heading website">Websites</h2>
          <div class="flip-cards-container">
             <div class="flip-card" data-aos="fade-in" data-aos-delay="100">
                <div class="flip-card-inner">
@@ -276,11 +286,11 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">WeWood Woodworking</p>
+                     <p class="flip-card-heading wewood">WeWood Woodworking</p>
                      <br>
                      <p>Bootstrap5</p>
                      <br>
-                     <p class="flip-card-par">Landing page for a woodworking company coded with Bootstrap5. Mobile responsive.</p>
+                     <p class="flip-card-par wewood-par">Landing page for a woodworking company coded with Bootstrap5. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -296,11 +306,11 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Namaste Yoga Studio</p>
+                     <p class="flip-card-heading namaste">Namaste Yoga Studio</p>
                      <br>
                      <p>HTML5, CSS3</p>
                      <br>
-                     <p class="flip-card-par">Landing page for a yoga studio coded with HTML5 and CSS3, Flexbox. Mobile responsive.</p>
+                     <p class="flip-card-par namaste-par">Landing page for a yoga studio coded with HTML5 and CSS3, Flexbox. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -318,11 +328,11 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Photographer website</p>
+                     <p class="flip-card-heading photographer">Photographer website</p>
                      <br>
                      <p>Bootstrap5</p>
                      <br>
-                     <p class="flip-card-par">Landing page for a Photographer coded with Bootstrap5. Mobile responsive.</p>
+                     <p class="flip-card-par photographer-par">Landing page for a Photographer coded with Bootstrap5. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -338,11 +348,11 @@
                   </div>
                   <div class="flip-card-back">
                      <br>
-                     <p class="flip-card-heading">Illustrator Website</p>
+                     <p class="flip-card-heading illustrator">Illustrator Website</p>
                      <br>
                      <p>Tailwind, AOS animations</p>
                      <br>
-                     <p class="flip-card-par">Landing page for an illustrator. Mobile responsive.</p>
+                     <p class="flip-card-par illustrator-par">Landing page for an illustrator. Mobile responsive.</p>
                      <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
                      <br>
                      <br>
@@ -360,16 +370,10 @@
       <form action="https://formspree.io/f/mrgjrrke" method="POST" data-aos="fade-in" data-aos-delay="100">
          <input type="hidden" name="_language" value="en"/>
          <div class="heading_container">
-            <label class="label_text">
-            Your email:
             <input type="email" class="text_input email_input" name="_replyto" placeholder="Your email..." required="">
-            </label>
          </div>
          <div class="heading_container">
-            <label class="label_text">
-            Your message:
             <textarea class="text_input msg_input" name="message" placeholder="Type your message..." required=""></textarea>
-            </label>
          </div>
          <br>
          <div class="heading_container">

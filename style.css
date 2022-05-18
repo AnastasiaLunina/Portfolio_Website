@@ -892,6 +892,11 @@ footer {
     width: 100px;
   }
 
+  #image1, #image2, #image3 {
+    height: 100px;
+    width: 100px;
+  }
+
   .flip-cards-container {
     flex-direction: column;
   }
@@ -964,13 +969,13 @@ footer {
   .language {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 30vh;
     width: 10vw;
   }
   
   .btn-language {
     align-items: flex-start;
-    margin-top: 25px;
+    margin-top: 10px;
   }
 
   .flag-img {

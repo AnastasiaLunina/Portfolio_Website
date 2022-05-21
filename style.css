@@ -358,7 +358,7 @@ hr:after {
 
 .text_input {
   background-color: #EEEEEE;
-  border: none;
+  /* border: none; */
   padding: 12px 20px;  
   width: 300px;
   border-radius: 10px;

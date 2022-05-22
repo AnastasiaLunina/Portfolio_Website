@@ -827,6 +827,16 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.attribution {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+  opacity: 0.4;
+  text-align: center;
+  margin-top: 15px;
+
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 800px) {
   h1 {
@@ -880,7 +890,8 @@ footer {
     padding: 10px;
     margin-right: 10px;
     margin-left: 10px;
-    width: 95px;
+    width: 150px;
+    height: 200px;
   }
 
   .cards {
@@ -989,5 +1000,20 @@ footer {
   .flip-card {
     width: 350px;
     height: 250px;
+  }
+
+  .cards {
+    font-size: 0.7rem;
+  }
+
+  .attribution {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .image-container {
+    width: 95px;
+    height: 150px;
   }
 }

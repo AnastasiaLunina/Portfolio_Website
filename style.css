@@ -100,10 +100,11 @@ body {
   z-index: 130;
   cursor: pointer;
   margin-top: 25px;
-  border: none;
   background: transparent;
   opacity: 0.7;
   transition: all .5s;
+  color: white;
+  border-radius: 50px;
 }
 
 .btn-language:hover {
@@ -364,6 +365,7 @@ hr:after {
   border-radius: 10px;
   border: 1px solid var(--secondary-color);
   font-family: Comfortaa, sans-serif;
+  resize: none;
 }
 
 .msg_input {
@@ -528,6 +530,30 @@ form {
   cursor: pointer;
 }
 
+.about-par {
+  text-transform: lowercase;
+  margin: 0 20px;
+}
+
+.contact-icons-title {
+  justify-content: center;
+  margin: 20px;
+}
+
+.my-photo-sm {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 7px dotted var(--primary-color);
+  margin: 20px;
+}
+
+.name-image {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
 .resume-download:hover::after {
   background: var(--primary-variant);
   border-radius: 4px;
@@ -540,6 +566,152 @@ form {
   width: 120px;
   z-index: 1;
 }
+
+.contact-me-title {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.contact-me-title-header {
+  text-transform: lowercase;
+}
+
+/* Section posts */
+.posts-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 63px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-section {
+  width: 775px;
+}
+.post {
+  display: flex;
+}
+.post:nth-child(n+2) {
+  margin-top: 20px;
+}
+.post-content {
+  margin-left: 33px;
+  width: 100%;
+}
+.post-list-item:nth-child(n+1) {
+  margin-right: 18px;
+}
+.post-title {
+  margin-top: 6px;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--on-background);
+  font-weight: 700;
+}
+.title-link {
+  color: var(--on-background);
+  text-decoration: none;
+}
+.title-link:hover, .trend-title-link:hover {
+  color: var(--primary-color);
+}
+.post-timestamp {
+  margin-top: 25px;
+}
+.date {
+  color: #888888;
+  font-size: 16px;
+}
+.author {
+  color: var(--on-background);
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 14px;
+}
+.post-text {
+  margin-top: 44px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.post-text-block {
+  /* width: 367px; */
+  width: 70%;
+
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--on-background);
+  font-weight: 400;
+}
+.mobile-underline {
+  display: none;
+}
+.post-text-block:nth-child(n+2) {
+  margin-top: 10px;
+}
+.side-menu {
+  width: 270px;
+  margin-left: 120px;
+}
+.side-menu-section:nth-child(n+2) {
+  margin-top: 20px;
+}
+.section-title {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  /* color: var(--on-background); */
+
+}
+/* Section posts end */
+/* Side section */
+.side-menu {
+  width: 270px;
+  margin-left: 120px;
+}
+.side-menu-section:nth-child(n+2) {
+  margin-top: 60px;
+}
+.side-post-container {
+  display: flex;
+  align-items: flex-start;
+}
+/* .side-post-container:nth-child(n+2) {
+  margin-top: 14px;
+} */
+.side-menu-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.tag-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  list-style-type: none;
+}
+.tag-list-item {
+  margin-right: 5px;
+  margin-bottom: 6px;
+  border: 3px solid #eeeeee;
+  padding: 3px 13px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 30px;
+}
+.tag-list-item:hover {
+  background-color: rgba(244,243,241,0);
+  border: 3px solid var(--primary-color);
+}
+.tag-link {
+  color: var(--on-background);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* Side section ends */
 
 /* Projects Section */
 #projects, #contact {
@@ -837,6 +1009,10 @@ footer {
 
 }
 
+.underline-side-menu {
+  display: none;
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 800px) {
   h1 {
@@ -993,6 +1169,33 @@ footer {
     width: 25px;
     height: 25px;
   }
+
+  .contact-me-title-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-item {
+    margin: 5px;
+  }
+
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-content {
+    margin: 30px auto;
+  }
+
+  .side-menu {
+    width: 400px;
+    margin: 30px auto;
+  }
+
+  .underline-side-menu {
+    display: block;
+  }
 }
 
 /* Media Query: Small Smartphone (Vertical) */
@@ -1015,5 +1218,10 @@ footer {
   .image-container {
     width: 95px;
     height: 150px;
+  }
+
+  .post-content {
+    max-width: 400px;
+    margin: 0;
   }
 }

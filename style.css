@@ -1163,6 +1163,7 @@ footer {
   .btn-language {
     align-items: flex-start;
     margin-top: 10px;
+    color: var(--on-background);
   }
 
   .flag-img {
@@ -1195,6 +1196,10 @@ footer {
 
   .underline-side-menu {
     display: block;
+  }
+
+  .about-me {
+    margin-top: 50px;
   }
 }
 

@@ -532,6 +532,10 @@ form {
   text-align: center;
 }
 
+.image-container:hover {
+  border: 1px solid var(--primary-color);
+}
+
 .octocat {
   margin-top: 25px;
   height: 100px;
@@ -1122,6 +1126,154 @@ footer {
 
 .underline-side-menu {
   display: none;
+}
+
+/* Liker */
+.like-container {
+  /* background-color: #fff; */
+  width: 250px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.like {
+  position: absolute;
+  bottom: 20px;
+  height: 400px;
+  width: 250px;
+}
+
+.like-btn {
+  position: absolute;
+  bottom: 30px;
+  background-color: var(--primary-color);
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  width: 60px;
+}
+
+.like-btn:hover {
+  background-color: red;
+}
+
+.like-btn:active {
+  transform: scale(0.98);
+  /* box-shadow: 1px 1px 20px 2px rgba(255, 255, 255, 0.7); */
+}
+
+.like-img {
+  position: absolute;
+  animation-name: heart1;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-out;
+}
+
+@keyframes heart1 {
+  0% {
+    opacity: 1;
+    bottom: 10px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  25% {
+    left: calc(25%);
+  }
+  50% {
+      left: calc(50%);
+  }
+  75% {
+    right: calc(75%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  100% {
+    opacity: 0;
+    bottom: 210px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+}
+
+@keyframes heart2 {
+  0% {
+    opacity: 1;
+    bottom: 10px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  25% {
+      left: calc(50%);
+      -webkit-transform:translate3d(-50%,0,0);
+  }
+  50% {
+    right: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  75% {
+    right: calc(75%);
+  }
+  100% {
+    opacity: 0;
+    bottom: 210px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+}
+
+@keyframes heart3 {
+  0% {
+    opacity: 1;
+    bottom: 10px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  25% {
+      left: calc(50%);
+      -webkit-transform:translate3d(-50%,0,0);
+  }
+  50% {
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  75% {
+    left: calc(75%);
+  }
+  100% {
+    opacity: 0;
+    bottom: 210px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+}
+
+@keyframes heart4 {
+  0% {
+    opacity: 1;
+    bottom: 10px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  25% {
+    right: calc(25%);
+  }
+  50% {
+      right: calc(50%)
+  }
+  75% {
+    left: calc(75%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
+  100% {
+    opacity: 0;
+    bottom: 210px;
+    left: calc(50%);
+    -webkit-transform:translate3d(-50%,0,0);
+  }
 }
 
 /* Media Query: Large Smartphone (Vertical) */

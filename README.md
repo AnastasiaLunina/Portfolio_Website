@@ -2,4 +2,10 @@
 
 <hr>
 
-### See it live [here](https://anastasia-codes.netlify.app/)
+### ⭐ See it live [here](https://anastasia-codes.netlify.app/)
+<br>
+<img
+  src="./img/cover.png"
+  alt="cover"
+  width="570px"
+/>

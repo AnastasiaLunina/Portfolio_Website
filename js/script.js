@@ -93,6 +93,26 @@ function switchTheme(event) {
     }
   }
 
+// Liker
+function liker() {
+  const likeBtn = document.querySelector('.like-btn');
+  const likeImg = document.querySelector('.like');
+
+  likeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const random = Math.floor(Math.random() * 4) + 1;
+    const likes = document.createElement('img');
+    likes.src = '../img/heart.png';
+    likes.classList.add('like-img');
+    likes.style.animationName = `heart${random}`;
+    likeImg.appendChild(likes);
+    likes.addEventListener('animationend', () => {
+      likeImg.removeChild(likes);
+    });
+  });
+}
+liker();
+
 // Language Switch
 let language = {
       "en": {

@@ -53,9 +53,13 @@
       <!-- Home Section -->
       <section id="home">
          <div class="title-group">
-            <h1 class="heading-name">I am Anastasia</h1>
+            <div class="heading-name-container">
+               <h2 class="heading-name">I</h2>
+               <h2 class="heading-name">am</h2>
+               <h2 class="heading-name">Anastasia</h2>
+            </div>
             <h2 data-aos-delay="900" class="heading-title">A Software Engineer</h2>
-            <a href="https://github.com/AnastasiaLunina" target="_blank" class="link-github"><img src="img/octocat.svg" alt="octocat" class="octocat"  data-aos="fade-down" data-aos-delay="700"></img></a>
+            <a href="https://github.com/AnastasiaLunina" target="_blank" class="link-github"><img src="img/octocat.svg" alt="octocat" class="octocat" /></a>
          </div>
       </section>
       <!-- About Section -->
@@ -152,6 +156,47 @@
                      <br>
                      <a class="flip-card-link" href="https://react-al-fashion-store.netlify.app/" target="_blank">Live</a>
                      <a class="flip-card-link" href="https://github.com/AnastasiaLunina/react_fashion_store" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="flip-cards-container">
+            <div class="flip-card" data-aos="fade-in" data-aos-delay="100">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="img/png/ballet.png" alt="App image">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading yoga">Ballet Studio</p>
+                     <br>
+                     <p>React, React Router, React Hooks, Redux</p>
+                     <p class="flip-card-par yoga-par">App in progress</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://redux-ballet-studio.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/react-redux-ballet-studio" target="_blank">Code</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flip-card" data-aos="fade-in" data-aos-delay="100">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                     <img class="flip-img" src="img/png/edamam.png" alt="App image">
+                  </div>
+                  <div class="flip-card-back">
+                     <br>
+                     <p class="flip-card-heading yoga">Recipe App</p>
+                     <br>
+                     <p>React, React Hooks</p>
+                     <p class="flip-card-par yoga-par">Simple react app fetching data from Edamam API</p>
+                     <button class="readMoreBtn" onclick="readMoreLess(this)">Read more</button>
+                     <br>
+                     <br>
+                     <a class="flip-card-link" href="https://react-al-edamamapi.netlify.app/" target="_blank">Live</a>
+                     <a class="flip-card-link" href="https://github.com/AnastasiaLunina/react-recipe-edamam_API" target="_blank">Code</a>
                   </div>
                </div>
             </div>
@@ -449,19 +494,19 @@
       <div id="contact">
          <hr class="contact" width="500px" style="content:'Contact'">
       <!-- Mail -->
-      <form action="https://formspree.io/f/mrgjrrke" method="POST" data-aos="fade-in" data-aos-delay="100">
+      <form action="https://formspree.io/f/mrgjrrke" method="POST" data-aos="fade-in" data-aos-delay="100" class="form">
          <input type="hidden" name="_language" value="en"/>
-         <div class="heading_container">
-            <input type="email" class="text_input email_input" name="_replyto" placeholder="Your email..." required="">
+         <div class="heading_container form-control">
+            <input name="email" type="email" class="text_input email_input" name="_replyto" placeholder="Your email..." required>
          </div>
-         <div class="heading_container">
-            <textarea class="text_input msg_input" name="message" placeholder="Type your message..." required=""></textarea>
+         <div class="heading_container form-control">
+            <textarea name="textarea" class="text_input msg_input" name="message" placeholder="Type your message..." required></textarea>
          </div>
          <br>
          <div class="heading_container">
             <button class="btn" type="submit">Send</button>
          </div>
-    </form>
+      </form>
          <!-- <h2>Contact</h2> -->
          <div class="contact-icons">
             <a href="https://github.com/AnastasiaLunina" target="_blank"><i class="fab fa-github"></i></a>

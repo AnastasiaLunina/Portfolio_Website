@@ -91,8 +91,9 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  height: 100vh;
+  height: 10vh;
   width: 100vw;
+  /* z-index: -1; */
 }
 
 .btn-language {
@@ -278,12 +279,12 @@ section {
   src: url(fonts/sacramento.ttf); /* Путь к файлу со шрифтом */
  }
 
-h1 {
+.heading-name {
   margin-top: 5px;
   font-family: Sacramento, sans-serif;
   font-size: 9rem;
   margin-bottom: 0;
-
+  margin-right: 15px;
 }
 
 h2 {
@@ -301,6 +302,98 @@ h2 {
 /* Home Section */
 .title-group {
   text-align: center;
+}
+
+.heading-name-container {
+  display: flex;
+}
+
+.heading-name {
+  animation-duration: 1s;
+  transition: all 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+  transition-property: all;
+  z-index: 22;
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1)
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1)
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1)
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1)
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1)
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, .75, 1);
+    -ms-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1)
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, .85, 1);
+    -ms-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1)
+  }
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    -ms-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1)
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    -ms-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+}
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
 }
 
 /* About Section */
@@ -443,6 +536,24 @@ form {
   margin-top: 25px;
   height: 100px;
   width: 200px;
+  /* animation: bas infinite 6s ease-in-out; */
+  animation-name: bounce;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes bounce {
+  0%  {
+    transform: translateY(0px);
+  }
+  100%  {
+    transform: translateY(20px);
+  }
 }
 
 .my-photo {

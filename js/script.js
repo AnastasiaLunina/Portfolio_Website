@@ -98,7 +98,7 @@ let language = {
       "en": {
         "theme-dark": "Ночь",
         "theme-light": "День",
-        "heading-name": "I am Anastasia",
+        "heading-name": ["I", "am", "Anastasia"],
         "heading-title": "A Software Engineer",
         "about-me": "Hi there! I am Anastasia, a Software Engineer based in New York.",
         "about-me-par": "I use my passion and skills to create exceptional product. My websites are intuitive with a clean design. I am able to code amazing things from scratch. I love to learn, explore and think. Coding gives me the rewarding feeling of a never-ending puzzle, which I enjoy solving every day. I’ve always been kind of a mix of creative person and logical one. When I'm not coding, you can find me doing yoga or baking something delicious.",
@@ -125,7 +125,7 @@ let language = {
       "ru": {
             "theme-dark": "Ночь",
             "theme-light": "День",
-            "heading-name": "Я - Анастасия",
+            "heading-name": ["Я", "-", "Анастасия"],
             "heading-title": "Веб-Разработчик",
             "about-me": "Привет! Я - веб разработчик из Нью-Йорка",
             "about-me-par": "Я использую свои навыки для создания исключительного продукта. Мои веб-сайты интуитивны в использовании, дизайн продуман до мелочей. Я могу создавать удивительные вещи с нуля. Я люблю учиться, исследовать и думать. Программирование дает мне приятное ощущение бесконечной головоломки, которую я с удовольствием решаю каждый день. Я всегда была смесью творческого человека и логического. Когда я не программирую, вы можете найти меня на занятии по йоге или за приготовлением десерта",
@@ -157,7 +157,16 @@ btnRU.addEventListener('click', changeLanguageRu);
 btnENG.addEventListener('click', changeLanguageEng);
 
 function changeLanguageRu () {
-  document.querySelector('.heading-name').textContent = language.ru["heading-name"];
+  const myName = document.querySelectorAll('.heading-name')
+  // .textContent = language.ru["heading-name"][0];
+  // document.querySelector('.heading-name').textContent = language.ru["heading-name"][1];
+  // document.querySelector('.heading-name').textContent = language.ru["heading-name"][2];
+
+  myName.forEach((item, i) => {
+    item.textContent = language.ru["heading-name"][i]
+  })
+
+
   document.querySelector('.heading-title').textContent = language.ru["heading-title"];
   document.querySelector('.par-container h3').textContent = language.ru["about-me"];
   document.querySelector('.par').textContent = language.ru["about-me-par"];
@@ -177,7 +186,16 @@ function changeLanguageRu () {
 }
 
 function changeLanguageEng () {
-  document.querySelector('.heading-name').textContent = language.en["heading-name"];
+  const myName = document.querySelectorAll('.heading-name')
+  // .textContent = language.ru["heading-name"][0];
+  // document.querySelector('.heading-name').textContent = language.ru["heading-name"][1];
+  // document.querySelector('.heading-name').textContent = language.ru["heading-name"][2];
+
+  myName.forEach((item, i) => {
+    item.textContent = language.en["heading-name"][i]
+  })
+  
+  document.querySelector('.heading-name').textContent = language.en["heading-name"][0];
   document.querySelector('.heading-title').textContent = language.en["heading-title"];
   document.querySelector('.par-container h3').textContent = language.en["about-me"];
   document.querySelector('.par').textContent = language.en["about-me-par"];
@@ -194,4 +212,29 @@ function changeLanguageEng () {
   document.querySelector('.heading_container input').textContent = language.en["email"];
   document.querySelector('.heading_container textarea').textContent = language.en["message"];
   document.querySelector('.btn').textContent = language.en["send"];
+}
+
+let heading = Array.from(document.querySelectorAll('.heading-name'));
+
+// heading.forEach(head => {
+//   head.addEventListener('mouseenter', (e) => {
+//     console.log(e, 'hello')
+//   })})
+
+
+//     head.classList.add('rubberBand');
+//     head.addEventListener("animationend", () => {
+//       head.classList.remove('rubberBand');
+//     });
+//   })
+// })
+
+
+for(let i = 0; i < heading.length; i++) {
+  heading[i].addEventListener('mouseenter', function() {
+    this.classList.add('rubberBand');
+    this.addEventListener("animationend", function() {
+      this.classList.remove('rubberBand');
+    }, false);
+  })
 }

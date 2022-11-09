@@ -1464,6 +1464,22 @@ footer {
   .about-me {
     margin-top: 50px;
   }
+
+  /* Liker */
+  .like-container {
+    width: 20px;
+    margin-top: 20px;
+  }
+  
+  .like-btn {
+    bottom: 0px;
+    width: 50px;
+  }
+  
+  .like-img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Media Query: Small Smartphone (Vertical) */
@@ -1492,4 +1508,20 @@ footer {
     max-width: 400px;
     margin: 0;
   }
+
+  /* Liker */
+.like-container {
+  width: 20px;
+  margin-top: 20px;
+}
+
+.like-btn {
+  bottom: 0px;
+  width: 50px;
+}
+
+.like-img {
+  width: 40px;
+  height: 40px;
+}
 }

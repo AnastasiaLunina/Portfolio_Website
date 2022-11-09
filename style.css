@@ -1287,6 +1287,10 @@ footer {
     font-size: 1.5rem;
   }
 
+  .heading-name {
+    font-size: 4rem;
+  }
+
   .octocat {
     width: 100px;
     height: 100px;
@@ -1488,6 +1492,10 @@ footer {
     width: 350px;
     height: 250px;
   }
+
+  /* .heading-name {
+    font-size: 4rem;
+  } */
 
   .cards {
     font-size: 0.7rem;

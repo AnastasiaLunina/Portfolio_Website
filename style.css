@@ -61,7 +61,7 @@ body {
 /* Overlay */
 .overlay {
   position: fixed;
-  z-index: 9;
+  z-index: 30;
   top: 0;
   left: 0;
   width: 100vw;
@@ -235,7 +235,7 @@ nav li:nth-of-type(5) {
   position: fixed;
   top: 1rem;
   right: 2rem;
-  z-index: 10;
+  z-index: 35;
   display: inline;
   cursor: pointer;
 }

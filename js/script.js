@@ -258,3 +258,36 @@ for(let i = 0; i < heading.length; i++) {
     }, false);
   })
 }
+
+// Profile picture
+
+let clip1 = document.querySelector('.clip1');
+let hide1 = document.querySelector('.hide1');
+let hide2 = document.querySelector('.hide2');
+let clip3 = document.querySelector('.clip3');
+
+// Show hidden DIV on hover
+clip1.addEventListener('mouseover', function handleMouseOver() {
+    hide1.classList.remove('hide')
+    hide1.classList.add('block')
+    hide1.innerHTML = "&#8249; Logic &#47;&#8250;"
+  });
+
+// (optionally) Hide DIV on mouse out
+clip1.addEventListener('mouseout', function handleMouseOut() {
+    hide1.classList.remove('block')
+    hide1.classList.add('hide')
+  });
+
+// Show hidden DIV on hover
+clip3.addEventListener('mouseover', function handleMouseOver() {
+    hide2.classList.remove('hide')
+    hide2.classList.add('block')
+    hide2.innerHTML = "&#8249; Creativity &#47;&#8250;"
+  });
+
+// (optionally) Hide DIV on mouse out
+clip3.addEventListener('mouseout', function handleMouseOut() {
+    hide2.classList.remove('block')
+    hide2.classList.add('hide')
+  });

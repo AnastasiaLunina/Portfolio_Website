@@ -459,6 +459,7 @@ hr:after {
   border: 1px solid var(--secondary-color);
   font-family: Comfortaa, sans-serif;
   resize: none;
+  outline-color: var(--primary-variant);
 }
 
 .msg_input {
@@ -1167,12 +1168,128 @@ footer {
   /* box-shadow: 1px 1px 20px 2px rgba(255, 255, 255, 0.7); */
 }
 
+/* Profile image */
+
 .like-img {
   position: absolute;
   animation-name: heart1;
   animation-duration: 1500ms;
   animation-timing-function: ease-out;
 }
+
+.main-profile-img-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items:center;
+  margin-top: 0
+}
+
+.container-profile-img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #222;
+  border-radius: 10px;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.clip1 {
+  background: url(./img/MATH.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 23% 0, 42% 100%, 0 100%);
+}
+
+.clip2 {
+  background: url(./img/REGULAR.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(19% 0, 84% 0, 70% 100%, 40% 100%);
+}
+
+.clip3 {
+  background: url(./img/CREATIVE.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(84% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.container-profile-img:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  cursor: pointer;
+}
+
+.container-profile-img .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.hide1 {
+  margin-top: 150px;
+}
+
+.hide2 {
+  margin-top: 150px;
+}
+
+.block {
+  opacity: 1;
+  font-family: Sacramento, sans-serif;
+  color: var(--primary-variant);
+  font-size: 40px;
+}
+
+.container-img-par {
+  height: 200px;
+  width: 230px;
+  justify-content: center;
+  align-items:center;
+  margin: auto;
+}
+
+/* Custom Scrollbar */
+.custom-scroll {
+    overflow-y: auto;
+    max-height: 75vh;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 5px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .main-shop-container {
+    overflow: hidden;
+  }
+
+  .shop-sub-container-items {
+    width: 35%;
+  }
 
 @keyframes heart1 {
   0% {
@@ -1484,6 +1601,15 @@ footer {
     width: 40px;
     height: 40px;
   }
+
+  .block {
+    font-size: 25px;
+  }
+
+  .container-profile-img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /* Media Query: Small Smartphone (Vertical) */
@@ -1531,5 +1657,14 @@ footer {
 .like-img {
   width: 40px;
   height: 40px;
+}
+
+.block {
+  font-size: 16px;
+}
+
+.container-profile-img {
+  width: 250px;
+  height: 250px;
 }
 }

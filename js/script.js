@@ -266,28 +266,69 @@ let hide1 = document.querySelector('.hide1');
 let hide2 = document.querySelector('.hide2');
 let clip3 = document.querySelector('.clip3');
 
-// Show hidden DIV on hover
+
+if (window.screen.width >= 1024 && window.screen.height >= 768) {
+    // Show hidden DIV on hover
 clip1.addEventListener('mouseover', function handleMouseOver() {
-    hide1.classList.remove('hide')
-    hide1.classList.add('block')
-    hide1.innerHTML = "&#8249; Logic &#47;&#8250;"
-  });
+  hide1.classList.remove('hide')
+  hide1.classList.add('block')
+  hide1.innerHTML = "&#8249; Logic &#47;&#8250;"
+});
 
 // (optionally) Hide DIV on mouse out
 clip1.addEventListener('mouseout', function handleMouseOut() {
-    hide1.classList.remove('block')
-    hide1.classList.add('hide')
-  });
+  hide1.classList.remove('block')
+  hide1.classList.add('hide')
+});
 
 // Show hidden DIV on hover
 clip3.addEventListener('mouseover', function handleMouseOver() {
-    hide2.classList.remove('hide')
-    hide2.classList.add('block')
-    hide2.innerHTML = "&#8249; Creativity &#47;&#8250;"
-  });
+  hide2.classList.remove('hide')
+  hide2.classList.add('block')
+  hide2.innerHTML = "&#8249; Creativity &#47;&#8250;"
+});
 
 // (optionally) Hide DIV on mouse out
 clip3.addEventListener('mouseout', function handleMouseOut() {
-    hide2.classList.remove('block')
-    hide2.classList.add('hide')
-  });
+  hide2.classList.remove('block')
+  hide2.classList.add('hide')
+});
+}
+
+if (window.screen.width < 768) {
+  // Resolution is less than 768 
+  // Show hidden DIV on hover
+clip1.addEventListener('touchstart', function handleMouseOver() {
+  hide1.classList.remove('hide')
+  hide1.classList.add('block')
+  hide1.innerHTML = "&#8249; Logic &#47;&#8250;"
+});
+
+// (optionally) Hide DIV on mouse out
+clip1.addEventListener('touchcancel', function handleMouseOut() {
+  hide1.classList.remove('block')
+  hide1.classList.add('hide')
+});
+
+// Show hidden DIV on hover
+clip3.addEventListener('touchstart', function handleMouseOver() {
+  hide2.classList.remove('hide')
+  hide2.classList.add('block')
+  hide2.innerHTML = "&#8249; Creativity &#47;&#8250;"
+});
+
+// (optionally) Hide DIV on mouse out
+clip3.addEventListener('touchcancel', function handleMouseOut() {
+  hide2.classList.remove('block')
+  hide2.classList.add('hide')
+});
+}
+
+
+
+
+
+
+
+
+

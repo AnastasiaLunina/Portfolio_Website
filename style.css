@@ -1186,8 +1186,8 @@ footer {
 
 .container-profile-img {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background-color: #222;
   border-radius: 10px;
 }
@@ -1290,6 +1290,10 @@ footer {
   .shop-sub-container-items {
     width: 35%;
   }
+
+  .hidden-img {
+    display: none;
+  } 
 
 @keyframes heart1 {
   0% {
@@ -1609,6 +1613,15 @@ footer {
   .container-profile-img {
     width: 300px;
     height: 300px;
+  }
+
+  .hidden-img {
+    display: flex;
+    margin: auto;
+  } 
+
+  .hidden-img-block {
+    display: none;
   }
 }
 
